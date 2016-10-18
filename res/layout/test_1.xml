@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick_Add"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_testname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/et_testname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_testamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount" />
+
+    <EditText
+        android:id="@+id/et_testamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/b_testadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_Add"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/b_testclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCLick_ClearAll"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/b_testdisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_Display"
+        android:text="Display" />
+
+</LinearLayout>

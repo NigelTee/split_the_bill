@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splitthebill"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".calculate"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+  		<activity
+            android:name=".DataBaseDemo1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DataBaseDemo2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".DataBaseDemo3"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".Test_2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.splitthebill.TEST_2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test2"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".Test2_2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.splitthebill.TEST2_2" />
+			
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test2_delete"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.splitthebill.TEST2_DELETE" />
+ 				
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test2ViewAndUpdate"
+             android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.splitthebill.TEST2VIEWANDUPDATE" />
+ 				
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+           
+        </activity> 
+        <activity
+            android:name=".CheckData"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

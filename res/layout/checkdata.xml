@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/et_checkdata_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/et_checkdata_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/b_checkdata_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addUser"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/b_checkdata_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="viewDetails"
+        android:text="Details" />
+
+    <EditText
+        android:id="@+id/et_checkdata_getdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/b_checkdata_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Checkdetails"
+        android:text="Check" />
+
+    <Button
+        android:id="@+id/b_checkdata_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="update"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/b_checkdata_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delete"
+        android:text="Button" />
+
+</LinearLayout>

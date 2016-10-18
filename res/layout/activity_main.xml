@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.splitthebill.MainActivity" >
+
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10" >
+        
+    <TextView
+        android:id="@+id/tvStatus2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Items"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:layout_weight="3"/>
+    
+    <TextView
+        android:id="@+id/tvAmount2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_weight="7" />
+    
+</LinearLayout>
+    
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10" >
+
+    <EditText
+        android:id="@+id/etitemname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="3" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etitemprice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+   	</LinearLayout>
+
+<LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="10" >
+    
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_weight="5" />
+
+    <Button
+        android:id="@+id/Total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TOTAL"
+        android:layout_weight="5" />
+    
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_testname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total incurred"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/ettotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/bclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+
+    <ListView
+        android:id="@+id/lvdisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
